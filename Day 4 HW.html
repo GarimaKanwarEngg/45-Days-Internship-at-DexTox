@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dextox Softtech Pvt. Ltd.</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .Header {
+            background-color: navy;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        ul.Menu-list {
+            display: flex;
+            list-style: none;
+            color: white;
+        }
+
+        ul.Menu-list li {
+            padding: 10px;
+        }
+
+        a.Menu-btn-set {
+            background-color: #02adef;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        section.Main-section {
+            display: flex;
+            padding: 10px;
+            background: url(img/Banner.jpg);
+            align-items: center;
+        }
+
+        p.main-para-1 {
+            color: white;
+            background: #00ADEF70;
+            width: fit-content;
+            padding: 10px 45px 10px 45px;
+            border-radius: 25px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        p.main-para {
+            color: white;
+        }
+
+        .main-section-content {
+            padding: 10px;
+        }
+
+        a.main-btn-set {
+            background-color: #02adef;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        .main-section-img {
+            padding: 10px;
+        }
+
+        section.Main-Box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+            background-color: white;
+            border-color: skyblue;
+            border-width: thin;
+            padding: 20px;
+            border-bottom: 2px solid #02ADEF;
+            width: 900px;
+            margin: auto;
+        }
+
+        .Main-Box-Img {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .Main-Box-Img img {
+            margin: 10px;
+            border-radius: 20px;
+            border: 2px solid red;
+            border-color: rgb(217, 217, 218);
+            width: 140px;
+            padding: 10px;
+        }
+
+        section.section-3 {
+            background-color: #efefef;
+            padding: 60px 10px 60px 10px;
+
+            text-align: center;
+        }
+
+        section.section-4 {
+            display: flex;
+            padding: 60px 10px 60px 10px;
+            justify-content: space-between;
+        }
+
+        .section-4-img {
+            padding: 10px;
+        }
+
+        img.section-4-image {
+            width: 550px;
+            margin: auto;
+        }
+
+        .section-4-content {
+            padding: 10px;
+        }
+
+        h3.section-4-h3 {
+            color: #59cfff;
+        }
+
+        h2.section-4-h3 {
+            color: navy;
+        }
+
+        .section-4-box-1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section-4-box-1-1 {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            padding: 10px;
+            margin: 10px;
+            width: 221px;
+            border-radius: 10px;
+            border-left: 2px solid blue;
+        }
+
+        section.section-5 {
+            padding: 40px 10px 40px 10px;
+            background: #87ceeb4d;
+        }
+
+        .section-5-content {
+            text-align: center;
+        }
+
+        h2.ssection-5-h2 {
+            color: navy;
+        }
+
+        .section-5-boxes {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section-5-box-1-1 {
+            padding: 10px;
+            margin: 10px 10px 40px 10px;
+            background-color: #f4eb856e;
+            display: flex;
+            justify-content: space-between;
+            width: 520px;
+            border-radius: 10px;
+            border: 2px solid rgb(255, 213, 0);
+        }
+
+        img.section-5-box-1-1-img {
+            width: 250px;
+            margin: auto;
+        }
+
+        h3.section-5-box-1-1-h3 {
+            color: #fe00d7;
+        }
+
+        .section-5-box-1-2 {
+            padding: 10px;
+            margin: 10px;
+            background-color: #85e2f46e;
+            display: flex;
+            justify-content: space-between;
+            width: 520px;
+            border-radius: 10px;
+            border: 2px solid rgb(0, 114, 245);
+        }
+
+        img.section-5-box-1-2-img {
+            width: 250px;
+            margin: auto;
+        }
+
+        h3.section-5-box-1-2-h3 {
+            color: #0051ff;
+        }
+
+        .section-5-box-1-3 {
+            padding: 10px;
+            margin: 10px 10px 40px 10px;
+            background-color: #d3c3f86e;
+            display: flex;
+            justify-content: space-between;
+            width: 520px;
+            border-radius: 10px;
+            border: 2px solid rgb(170, 0, 255);
+        }
+
+        img.section-5-box-1-3-img {
+            width: 250px;
+            margin: auto;
+        }
+
+        h3.section-5-box-1-3-h3 {
+            color: #9b02fa;
+            border-color: red;
+        }
+
+        .section-5-box-1-4 {
+            padding: 10px;
+            margin: 10px;
+            background-color: #ea9e9e6e;
+            display: flex;
+            justify-content: space-between;
+            width: 520px;
+            border-radius: 10px;
+            border: 2px solid rgb(255, 0, 0);
+        }
+
+        img.section-5-box-1-4-img {
+            width: 250px;
+            margin: auto;
+        }
+
+        h3.section-5-box-1-4-h3 {
+            color: #ff0000;
+        }
+
+        section.section-6 {
+            background-color: navy;
+            padding: 40px 10px 40px 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .section-6-box-1 {
+            padding-bottom: 41px;
+        }
+
+        .section-6-box-2 {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        section.section-7 {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+
+        }
+
+        img.section-7-box1-1-img {
+            width: 50px;
+        }
+
+        .section-7-main-box {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            align-items: center;
+        }
+
+        img.section-3-box2-img {
+            width: 347px;
+        }
+
+        img.section-7-box3-1-img {
+            width: 50px;
+        }
+
+        .section-7-box1-1 {
+            padding: 10px;
+            border-bottom: 2px solid skyblue;
+            background-color: white;
+            border-radius: 10px;
+            margin: 25px;
+
+        }
+
+        .section-7-box3-1 {
+            padding: 10px;
+            border-bottom: 2px solid skyblue;
+            background-color: white;
+            border-radius: 10px;
+            margin: 25px;
+        }
+
+        h4.section-7-h4 {
+            text-align: center;
+            color: #00b5ff;
+        }
+
+        h2.section-7-h2 {
+            text-align: center;
+        }
+
+        p.section-7-para {
+            text-align: center;
+            padding: 0px 0px 40px 0px;
+        }
+
+        section.section-8 {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .section-8-div-1 {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img.section-8-div-1-img {
+            width: 250px;
+        }
+
+        .section-8-div-1-1 {
+            padding: 10px;
+            border: 2px solid #ff9249;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px;
+            background-color: rgba(255, 207, 119, 0.053);
+        }
+
+        .section-8-div-1-2 {
+            padding: 10px;
+            border: 2px solid #dd41f9;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px;
+            background-color: rgba(219, 119, 255, 0.053);
+        }
+
+        .section-8-div-1-3 {
+            padding: 10px;
+            border: 2px solid #ff49f3;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px;
+            background-color: rgba(244, 119, 255, 0.025);
+        }
+
+        .section-8-div-2 {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section-8-div-2-1 {
+            padding: 10px;
+            border: 2px solid #00ccff;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px;
+            background-color: rgba(119, 239, 255, 0.053);
+        }
+
+        .section-8-div-2-2 {
+            padding: 10px;
+            border: 2px solid #f941cb;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px;
+            background-color: rgba(255, 119, 250, 0.053);
+        }
+
+        .section-8-div-2-3 {
+            padding: 10px;
+            border: 2px solid #26ff00;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px;
+            background-color: rgba(167, 255, 119, 0.025);
+        }
+
+        section.sectoin-9 {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            padding: 40px 10px 40px 10px;
+        }
+
+        .section-9-div-1 {
+            padding: 10px;
+        }
+
+        img.section-9-div-2-img {
+            width: 529px;
+            margin: auto;
+        }
+
+        .section-9-div-2 {
+            padding: 10px;
+        }
+
+        h3.section-9-div-1-h3 {
+            color: skyblue;
+        }
+
+        h2.section-9-div-1-h2 {
+            color: navy;
+        }
+
+        .section-9-div-1-box {
+            display: flex;
+        }
+
+        p.section-9-div-1-p {
+            background-color: #d3d3d321;
+            padding: 10px;
+            border-radius: 10px;
+            border-left: 2px solid grey;
+        }
+
+        .section-9-div-1-1 {
+            margin-right: 84px;
+        }
+
+        p.section-9-div-1-para {
+            padding-right: 30px;
+        }
+
+        section.section-10 {
+    background-color: #c0c0c029;
+    padding: 10px;
+    text-align: center;
+}
+
+.section-10-div1 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-10-div1-1 {
+    background-color: white;
+    border-radius: 10px;
+    border-bottom: 2px solid navy;
+    margin: 10px;
+}
+
+img.section-10-div1-1-img {
+    background-color: navy;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.section-10-div1-1 {
+    padding: 10px;
+    width: 243px;
+}
+
+ul.section-10-ul {
+    display: flex;
+    padding: 0px;
+}
+
+ul.section-10-ul li {
+    padding: 3px;
+    list-style: none;
+}
+
+a.section-10-div1-1 {
+    text-decoration: none;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Header">
+            <div class="logo-set">
+                <img src="IMG/Dextox logo.png" alt="Dextox Logo">
+            </div>
+            <div class="Menu-set">
+                <ul class="Menu-list">
+                    <li style="color: rgb(255, 255, 255);">Home</li>
+                    <li>Our Company</li>
+                    <li>IT Services</li>
+                    <li>Our Blogs</li>
+                    <li>Contact Us</li>
+                    <li>Developer API</li>
+                </ul>
+            </div>
+            <div class="menu-btn">
+                <a href="#" class="Menu-btn-set">Register</a>
+                <a href="https://dextox.in/" class="Menu-btn-set">Login</a>
+            </div>
+        </div>
+        <section class="Main-section">
+            <div class="main-section-content">
+                <p class="main-para-1">The Smarter Way to Manage All Your Payments</p>
+                <h1>Revolutioniziing Business Payments with Integrated, Secure, and Scalable Banking Solution.</h1>
+                <p class="main-para">Dextox empowers businesses to handle payments smarter. From vendor payouts to
+                    customer collections, seamlessly link your bank accounts, track transactions, and stay in complete
+                    financial control.</p>
+                <a href="#" class="main-btn-set">Need Support?</a>
+            </div>
+            <div class="main-section-img">
+                <img src="IMG/Dextox-Main-Section.gif" class="main-img">
+            </div>
+        </section>
+        <section class="Main-Box">
+            <div>
+                <h2>Our Trusted Partners</h2>
+            </div>
+            <div class="Main-Box-Img">
+                <img src="IMG/client-1.png">
+                <img src="IMG/client-2.png">
+                <img src="IMG/client-3.png">
+                <img src="IMG/client-4.png">
+            </div>
+        </section>
+        <section class="section-3">
+            <h2 class="section-3-h2">Welcome to Dextox Softech - India's All-in-One Digital Banking & Payments Platform
+            </h2>
+            <p>"Dextox Softech brings all your financial operations onto one secure platform, making business banking
+                smarter and easier. From linking multiple bank accounts to paying vendors, disbursing salaries, sending
+                rewards, and accepting customer payments, everything is managed seamlessly in a single dashboard. With
+                automated reconciliation, GST/TDS compliance, and real-time tracking, Dextox Softech eliminates manual
+                errors and ensures complete transparency. Powerful developer APIs and webhooks enable deep integration
+                and automation, while invoice generation, reminders, and settlement tools help businesses stay on top of
+                their cash flow. Whether you're a freelancer, startup, or growing enterprise, Dextox Softech empowers
+                you to streamline payments, reduce operational hassles, and focus on growth."</p>
+        </section>
+        <section class="section-4">
+            <div class="section-4-img">
+                <img src="IMG/section 4 img.png" class="section-4-image">
+            </div>
+            <div class="section-4-content">
+                <h3 class="section-4-h3">DEXTOX SOFTECH PVT. LTD.</h3>
+                <h2 class="section-4-h3">Empowering Businesses with Smarter Banking Solutions</h2>
+                <p>At Dextox, we simplify the way businesses handle money. By integrating powerful banking solutions
+                    into one platform, we enable you to make secure vendor payments, accept customer transactions, and
+                    reconcile accounts with ease. Our seamless system bridges the gap between traditional banking and
+                    modern digital payments, helping you save time, reduce errors, and focus on growth. With Dextox,
+                    managing your business finances is not just convenient-it's smarter, faster, and future-ready.</p>
+                <div class="section-4-box">
+                    <div class="section-4-box-1">
+                        <div class="section-4-box-1-1">
+                            <p><b>Integrated Banding</b></p>
+                        </div>
+                        <div class="section-4-box-1-1">
+                            <p><b>24/7 Availability</b></p>
+                        </div>
+                    </div>
+                    <div class="section-4-box-1">
+                        <div class="section-4-box-1-1">
+                            <p><b>Best API Solution</b></p>
+                        </div>
+                        <div class="section-4-box-1-1">
+                            <p><b>Easy Vendor Payments</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-5">
+            <div class="section-5-content">
+                <h2 class="ssection-5-h2">Start Using Powerful Tools for Payments & Payouts</h2>
+                <p>Streamline your business finances effortlessly with Dextox. Connect your bank accounts to send vendor
+                    payments, collect incoming payments, and reconcile all transactions in real time. Simplify
+                    accounting, reduce errors, and gain complete visibility over your cash flow, so managing payments
+                    becomes seamless and stress-free."</p>
+            </div>
+            <div class="section-5-boxes">
+                <div class="section-5-box-1">
+                    <div class="section-5-box-1-1">
+                        <div>
+                            <h3 class="section-5-box-1-1-h3">Quickly Generate UPI or QR Codes for Payments</h3>
+                            <p>"Create QR codes to accept in-store or offline payments. Customers can pay instantly via
+                                UPI or digital wallets, with every transaction tracked in real time."</p>
+                        </div>
+                        <div>
+                            <img src="IMG/s5-1.png" class="section-5-box-1-1-img">
+                        </div>
+                    </div>
+                    <div class="section-5-box-1-2">
+                        <div>
+                            <h3 class="section-5-box-1-2-h3">Instantly Create Payment Links</h3>
+                            <p>"Collect payments securely by sharing custom links via WhatsApp, SMS, or Email - no
+                                website needed and track payments in real time."</p>
+                        </div>
+                        <div>
+                            <img src="IMG/s5-2.png" class="section-5-box-1-2-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="section-5-box-1">
+                    <div class="section-5-box-1-3">
+                        <div>
+                            <h3 class="section-5-box-1-3-h3">Connect Instantly with API Keys & Webhooks</h3>
+                            <p>"Integrate your app or website using secure developer tools. Access APIs and webhooks to
+                                automate payments and streamline your workflows effortlessly.""</p>
+                        </div>
+                        <div>
+                            <img src="IMG/s5-3.png" class="section-5-box-1-3-img">
+                        </div>
+                    </div>
+                    <div class="section-5-box-1-4">
+                        <div>
+                            <h3 class="section-5-box-1-4-h3">Receive Payments Instantly Online</h3>
+                            <p>"Accept payments instantly via UPI, cards, and net banking. Provide a seamless, secure,
+                                and fast checkout experience for your customers."</p>
+                        </div>
+                        <div>
+                            <img src="IMG/s5-4.png" class="section-5-box-1-4-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-6">
+            <div class="section-6-box-1">
+                <h3 class="section-6-h3">DEXTOX SOFTECH PRIVATE LIMETED</h3>
+                <h2 class="section-6-h2">Complete Payment Solutions for Growing Business</h2>
+            </div>
+            <div class="section-6-box-2">
+                <div class="section-6-box-2-1">
+                    <img src="IMG/1-counter.png" class="section-6-box-2-1-img">
+                    <h2 class="section-6-box-2-1-h2">400+</h2>
+                    <p class="section-6-box-2-1-para">Our Clients</p>
+                </div>
+                <div class="section-6-box-2-1">
+                    <img src="IMG/1-counter.png" class="section-6-box-2-1-img">
+                    <h2 class="section-6-box-2-1-h2">400+</h2>
+                    <p class="section-6-box-2-1-para">Years Of Experience</p>
+                </div>
+                <div class="section-6-box-2-1">
+                    <img src="IMG/1-counter.png" class="section-6-box-2-1-img">
+                    <h2 class="section-6-box-2-1-h2">400+</h2>
+                    <p class="section-6-box-2-1-para">Working Employees</p>
+                </div>
+                <div class="section-6-box-2-1">
+                    <img src="IMG/1-counter.png" class="section-6-box-2-1-img">
+                    <h2 class="section-6-box-2-1-h2">400+</h2>
+                    <p class="section-6-box-2-1-para">Our Offices</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-7">
+            <h4 class="section-7-h4">DEXTOX SOFTECH PRIVATE LIMITED</h4>
+            <h2 class="section-7-h2">All-in-One Platform for Smarter Business Transactions</h2>
+            <p class="section-7-para">Accept payments, disburse payouts, and manage invoices effortlessly-everything on
+                one secure, easy-to-use platform designed for growth.</p>
+            <div class="section-7-main-box">
+                <div class="section-7-box1">
+                    <div class="section-7-box1-1">
+                        <img src="IMG/software.png" class="section-7-box1-1-img">
+                        <h3 class="section-7-box1-1-h3">Smart. Simple. All-in-one.</h3>
+                        <p class="section-7-box1-1-para">One smart dashboard to control collections, payouts, and
+                            invoices -simple, fast, and seamless.</p>
+                    </div>
+                    <div class="section-7-box1-1">
+                        <img src="IMG/invoice.png" class="section-7-box1-1-img">
+                        <h3 class="section-7-box1-1-h3">Smart. Simple. All-in-one.</h3>
+                        <p class="section-7-box1-1-para">One smart dashboard to control collections, payouts, and
+                            invoices -simple, fast, and seamless.</p>
+                    </div>
+                </div>
+                <div class="section-7-box2">
+                    <img src="IMG/New-Dashbord-1.png" class="section-3-box2-img">
+                </div>
+                <div class="section-7-box3">
+                    <div class="section-7-box3">
+                        <div class="section-7-box3-1">
+                            <img src="IMG/money.png" class="section-7-box3-1-img">
+                            <h3 class="section-7-box3-1-h3">Fast, Secure & Instant Payouts</h3>
+                            <p class="section-7-box3-1-para">Make instant vendor, salary, and reward payouts with speed,
+                                security, and full transparency.</p>
+                        </div>
+                        <div class="section-7-box3-1">
+                            <img src="IMG/api.png" class="section-7-box3-1-img">
+                            <h3 class="section-7-box3-1-h3">Developer-Friendly APIs</h3>
+                            <p class="section-7-box3-1-para"> Fast, secure, and hassle-free payment gateway setup
+                                powered by strong APIs and pre-built plugins.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-8">
+            <h2 class="section-8-h2">Integrated Banking That Works for Your Growth</h2>
+            <p class="section-8-para">Dextox Softtech helps you simplify financial operations. Connect your bank
+                accounts to pay vendors, receive customer payments, and reconcile transactions - all in one secure,
+                integrated platform.</p>
+            <div class="section-8-div-1">
+                <div class="section-8-div-1-1">
+                    <img src="IMG/vendor-1.png" class="section-8-div-1-img">
+                    <h2 class="section-8-div-1-1-h2">Trusted Vendor Payments, Made Easy</h2>
+                    <p class="section-8-div-1-1-p">Vendor payments made simple, fast, and secure with Dextox Softech.
+                        Streamline disbursements, minimize delays, and build stronger supplier relationships with our
+                        seamless payment solutions.</p>
+                    <h3 class="section-8-div-1-1-h3">01</h3>
+                </div>
+                <div class="section-8-div-1-2">
+                    <img src="IMG/salary.png" class="section-8-div-1-img">
+                    <h2 class="section-8-div-1-2-h2">Salary Payments Made Easy & Efficient</h2>
+                    <p class="section-8-div-1-2-p">Pay your employees on time, safely and easily with Dextox Softech.
+                        Experience quick and seamless salary transfers with no hassles - fast, secure, and trusted by
+                        growing businesses.</p>
+                    <h3 class="section-8-div-1-2-h3">02</h3>
+                </div>
+                <div class="section-8-div-1-3">
+                    <img src="IMG/gatway.png" class="section-8-div-1-img">
+                    <h2 class="section-8-div-1-3-h2">Payment Gateway That's Simple, Safe & Scalable</h2>
+                    <p class="section-8-div-1-3-p">Collect payments online effortlessly with Dextox Softech's Payment
+                        Gateway. Seamless setup, robust security, and multiple payment optionsensure smooth transactions
+                        for your business.</p>
+                    <h3 class="section-8-div-1-3-h3">01</h3>
+                </div>
+            </div>
+
+            <div class="section-8-div-2">
+                <div class="section-8-div-2-1">
+                    <img src="IMG/reward.png" class="section-8-div-1-img">
+                    <h2 class="section-8-div-2-1-h2">Rewards & Recognitions That Inspire Trust & Excellence</h2>
+                    <p class="section-8-div-2-1-p">Send rewards and recognition payouts effortlessly with Dextox
+                        Softech. Fast, secure, and hassle-free transfers for bonuses and incentives to keep your team
+                        motivated.</p>
+                    <h3 class="section-8-div-2-1-h3">01</h3>
+                </div>
+                <div class="section-8-div-2-2">
+                    <img src="IMG/escrow.png" class="section-8-div-1-img">
+                    <h2 class="section-8-div-2-2-h2">Simplify Complex Deals with Trusted Escrow Solutions</h2>
+                    <p class="section-8-div-2-2-p">Ensure secure, transparent transactions with trusted escrow
+                        solutions. Reduce risk and simplify complex deals with automated, reliable payment management.
+                    </p>
+                    <h3 class="section-8-div-2-2-h3">05</h3>
+                </div>
+                <div class="section-8-div-2-3">
+                    <img src="IMG/accounts.png" class="section-8-div-1-img">
+                    <h2 class="section-8-div-2-3-h2">Seamless Virtual Accounting for Businesses</h2>
+                    <p class="section-8-div-2-3-p">Manage your finances effortlessly with virtual accounting. Track
+                        expenses, reconcile transactions, and generate reports securely in real time, all online from
+                        anywhere.</p>
+                    <h3 class="section-8-div-2-3-h3">06</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="sectoin-9">
+            <div class="section-9-div-1">
+                <h3 class="section-9-div-1-h3">WHY TRUST US?</h3>
+                <h2 class="section-9-div-1-h2">Dextox Your Banking, Trust Our Expertise.</h2>
+                <p class="section-9-div-1-para">At Detox, we believe finance should empower, not overwhelm. That's why
+                    we focus on creating a Banking Detox experience - simplifying complex processes, eliminating hidden
+                    hurdles, and ensuring every transaction is secure, transparent, and effortless. With bank-grade
+                    security, regulatory compliance, and partnerships with leading banks & fintechs, we've built a
+                    platform businesses trust for growth. Our promise is simple: clarity, security, and reliability - so
+                    you can focus on scaling your business while we keep your banking stress-free.</p>
+                <div class="section-9-div-1-box">
+                    <div class="section-9-div-1-1">
+                        <p class="section-9-div-1-p">Proven Expertise</p>
+                        <p class="section-9-div-1-p">Data Security</p>
+                        <p class="section-9-div-1-p">Scalability & Security</p>
+                    </div>
+                    <div class="section-9-div-1-2">
+                        <p class="section-9-div-1-p">Network Security</p>
+                        <p class="section-9-div-1-p">Client-Centric Solutions</p>
+                        <p class="section-9-div-1-p">Network Monitoring</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-9-div-2">
+                <img src="IMG/dextox.gif" class="section-9-div-2-img">
+            </div>
+        </section>
+
+        <section class="section-10">
+            <h2 class="section-10-h2">SOFTWARE CONSULTING & DEVELOPMENT FOR YOUR DIGITAL SUCCESS</h2>
+            <p class="section-10-p">30+ software solutions. 100+ clients. One mission: to empower businesses with smart,
+                scalable, and future- ready technology.</p>
+            <div class="section-10-div1">
+                <div class="section-10-div1-1">
+                    <img src="IMG/development-web.png" class="section-10-div1-1-img">
+                    <a href="#" class="section-10-div1-11">
+                        <h2 class="section-10-div1-1-h2">Web Development</h2>
+                    </a>
+                    <p class="section-10-div1-1-p">Dextox offers top web solutions with expert developers.</p>
+                    <ul class="section-10-ul">
+                        <li>Java</li>
+                        <li>Asp.Net</li>
+                        <li>Python</li>
+                        <li>Angular JS</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+
+                <div class="section-10-div1-1">
+                    <img src="IMG/service1.png" class="section-10-div1-1-img">
+                    <a href="#" class="section-10-div1-11">
+                        <h2 class="section-10-div1-1-h2">Enterprise Solutions</h2>
+                    </a>
+                    <p class="section-10-div1-1-p">We automate workflows with cloud-based remote operations.</p>
+                    <ul class="section-10-ul">
+                        <li>Business S/W</li>
+                        <li>CRM</li>
+                        <li>MLM</li>
+                        <li>Enterprise Mobility</li>
+                    </ul>
+                </div> 
+
+                <div class="section-10-div1-1">
+                    <img src="IMG/service3.png" class="section-10-div1-1-img">
+                    <a href="#" class="section-10-div1-11">
+                        <h2 class="section-10-div1-1-h2">Digital Marketing</h2>
+                    </a>
+                    <p class="section-10-div1-1-p">We help you grow your brand visibility and engagement online.</p>
+                    <ul class="section-10-ul">
+                        <li>SEO</li>
+                        <li>Social Media Marketing</li>
+                        <li>Google Ads</li>
+                    </ul>
+                </div>
+
+                <div class="section-10-div1-1">
+                    <img src="IMG/service4.png" class="section-10-div1-1-img">
+                    <a href="#" class="section-10-div1-11">
+                        <h2 class="section-10-div1-1-h2">Latest technology</h2>
+                    </a>
+                    <p class="section-10-div1-1-p">We leverage cutting-edge technologies to deliver future-ready solutions.</p>
+                    <ul class="section-10-ul">
+                        <li>Android</li>
+                        <li>Asp.Net</li>
+                        <li>.Net Core</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

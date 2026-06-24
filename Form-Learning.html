@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        label {
+            font-size: large;
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .form-set {
+            border: 1px solid grey;
+            padding: 40px 40px;
+            width: 800px;
+            margin: auto;
+        }
+
+        .form-date {
+            display: grid;
+        }
+
+
+
+        .form-date {
+            margin-bottom: 20px;
+        }
+
+        input#date {
+            height: 35px;
+        }
+
+        .form-fname {
+            margin-top: 10px;
+        }
+
+        .form-fname {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input#names {
+            width: 48%;
+            height: 35px;
+        }
+
+        .form-names {
+            margin-bottom: 20px;
+        }
+
+        .form-contacts {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .form-phone {
+            display: grid;
+            width: 48%;
+        }
+
+
+
+        .form-email {
+            display: grid;
+            width: 48%;
+        }
+
+        input#phone {
+            height: 35px;
+        }
+
+        label.email-id {
+            margin-bottom: 10px;
+        }
+
+        input#email {
+            height: 35px;
+        }
+
+        .form-details {
+            display: grid;
+            margin-bottom: 20px;
+        }
+
+        label.details-heading {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+
+
+        input#name-details {
+            height: 35px;
+        }
+
+        .refer-employee {
+            display: grid;
+
+        }
+
+        label.form-referred {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .form-employee-details-div {
+            margin-bottom: 20px;
+            justify-content: space-between;
+
+        }
+
+        input#employee {
+            width: 48%;
+            height: 35px;
+        }
+
+        .details-title-phone {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .title-details {
+            display: grid;
+            width: 48%;
+        }
+
+
+
+        input#title {
+            height: 35px;
+        }
+
+        .phone-details {
+            display: grid;
+            width: 48%;
+        }
+
+
+
+
+        input#phone-d {
+            height: 35px;
+        }
+
+        .details-mail-name {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .mail-details {
+            display: grid;
+            width: 48%;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        .form-employee-details-div {
+            display: flex;
+        }
+
+        .name-details {
+            display: grid;
+            width: 48%;
+        }
+
+        input#mail {
+            height: 35px;
+        }
+
+        input#name-e {
+            height: 35px;
+        }
+
+        .address-employee {
+            display: grid;
+        }
+
+        input#address {
+            height: 35px;
+            margin-bottom: 10px;
+        }
+
+        .address-details {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        input#city-address {
+            height: 35px;
+            width: 32%;
+        }
+
+        input.region-ip {
+            height: 35px;
+            width: 32%;
+        }
+
+        input.us-ip {
+            height: 35px;
+            width: 32%;
+        }
+
+
+        .form-sign {
+            display: grid;
+            margin-bottom: 20px;
+        }
+
+        button.btn-1 {
+            background: none;
+            padding: 10px 20px;
+        }
+
+        button.btn-2 {
+            background: black;
+            color: white;
+            padding: 10px 30px;
+            border: 2px solid black;
+        }
+
+        /* section 2 form */
+
+        section.from-2 {
+            background: #577cff57;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        h2.form2-h2 {
+            text-align: center;
+            color: blue;
+            margin-bottom: 0px;
+        }
+
+
+
+        h3.heading1 {
+            border-bottom: 1px solid black;
+            margin-bottom: 25px;
+        }
+
+
+
+        p.form2-p {
+            text-align: center;
+            color: blue;
+            margin-top: 5px;
+        }
+
+        form.form-2-2 {
+            width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            padding: 40px 30px;
+        }
+
+        .name-div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .name-div-content {
+            width: 30%;
+        }
+
+        .name-div-blank {
+            width: 100%;
+        }
+
+        .mail-div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .mail-div-content {
+            width: 30%;
+        }
+
+        .mail-div-blank {
+            width: 100%;
+        }
+
+        .contact-div {
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: space-between;
+        }
+
+        .contact-div-content {
+            width: 30%;
+        }
+
+        .contact-div-blank {
+            width: 100%;
+        }
+
+        p {
+            margin: 0px;
+            font-size: small;
+        }
+
+        h3.heading2 {
+            border-bottom: 1px solid black;
+            margin-bottom: 25px;
+        }
+
+        .order-div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.order-div-content {
+    width: 30%;
+}
+
+.order-div-blank {
+    width: 100%;
+}
+
+.Delivery-div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Delivery-div-content {
+    width: 30%;
+}
+
+.Delivery-div-blank {
+    width: 100%;
+}
+
+.location-div-blank {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.location-city {
+    display: grid;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <section class="form">
+        <div class="container">
+            <div class="form-set">
+                <form action="#">
+                    <h1 class="form-heading">Employee referral form template</h1>
+                    <div class="form-date">
+                        <label for="date" class="date-1">Date</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="form-names">
+                        <label for="names">Applicants Name</label>
+                        <div class="form-fname">
+                            <input type="text" name="names" id="names" placeholder="First">
+                            <input type="text" name="names" id="names" placeholder="Last">
+                        </div>
+                    </div>
+                    <div class="form-contacts">
+                        <div class="form-phone">
+                            <label for="phone" class="phone-no">Applicants Phone</label>
+                            <input type="number" name="phone" id="phone">
+                        </div>
+                        <div class="form-email">
+                            <label for="email" class="email-id">Applicants Email</label>
+                            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="form-details-reference">
+                        <div class="form-details">
+                            <label for="#" class="details-heading">Referred position</label>
+                            <label for="name-details" class="name-title">Name and Title of position</label>
+                            <input type="text" name="name-details" id="name-details">
+                        </div>
+                        <div class="refer-employee">
+                            <label for="refer" class="form-referred">Referred by:</label>
+                            <label for="employee" class="form-employee-details">Employee name</label>
+                        </div>
+                        <div class="form-employee-details-div">
+                            <input type="text" name="employee" id="employee" placeholder="First">
+                            <input type="text" name="employee" id="employee" placeholder="Last">
+                        </div>
+                        <div class="details-title-phone">
+                            <div class="title-details">
+                                <label for="title" class="title-employee">Title</label>
+                                <input type="text" name="title" id="title">
+                            </div>
+                            <div class="phone-details">
+                                <label for="phone-d" class="phone-employee">Phone</label>
+                                <input type="number" name="phone-d" id="phone-d">
+                            </div>
+                        </div>
+                        <div class="details-mail-name">
+                            <div class="mail-details">
+                                <label for="mail">Email</label>
+                                <input type="text" name="mail" id="mail">
+                            </div>
+                            <div class="name-details">
+                                <label for="name-e">Department Name</label>
+                                <input type="number" name="name-e" id="name-e">
+                            </div>
+                        </div>
+                        <div class="address-employee">
+                            <label for="address" class="form-address">Address</label>
+                            <input type="text" name="address" id="address" placeholder="Address line 1">
+                        </div>
+                        <div class="address-details">
+                            <input type="text" name="address" id="city-address" placeholder="City">
+                            <input list="Select" name="Select" placeholder="Region" class="region-ip">
+                            <datalist id="Select">
+                                <option value="NE">
+                                <option value="NW">
+                                <option value="SE">
+                                <option value="SW">
+                            </datalist>
+
+                            <input list="Location" name="Location" placeholder="United States" class="us-ip">
+                            <datalist id="Location">
+                                <option value="India">
+                                <option value="America">
+                                <option value="Canada">
+                                <option value="Australia">
+                                <option value="Japan"></option>
+                            </datalist>
+
+                        </div>
+                        <div class="form-sign">
+                            <label for="Sign">Signature</label>
+                            <textarea name="Sign" rows="5" cols="30">The cat was playing in the garden.</textarea>
+                        </div>
+                        <button class="btn-1">Print</button>
+                        <button class="btn-2">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="from-2">
+        <div class="container">
+            <h2 class="form2-h2">Order/delivery Tracking</h2>
+            <p class="form2-p">Trace your order</p>
+            <form action="#" class="form-2-2">
+                <h3 class="heading1">Personal Informationnnn</h3>
+                <div class="name-div">
+                    <div class="name-div-content">
+                        <label for="name" class="name-div-1" required>Name</label>
+                    </div>
+                    <div class="name-div-blank"> <input type="text" class="name-div-blank"></div>
+                </div>
+
+                <div class="mail-div">
+                    <div class="mail-div-content">
+                        <label for="mail" class="mail-div-1" required>Email</label>
+                    </div>
+                    <div class="mail-div-blank">
+                        <input type="email" class="mail-div-blank">
+                    </div>
+                </div>
+
+                <div class="contact-div">
+                    <div class="contact-div-content">
+                        <label for="contact" class="contact-div-1" required>Contact Number</label>
+                    </div>
+                    <div class="contact-div-blank">
+                        <input type="number" class="contact-div-blank">
+                        <p>As per your order</p>
+                    </div>
+
+                </div>
+
+                <h3 class="heading2">Order Information</h3>
+
+                <div class="order-div">
+                    <div class="order-div-content">
+                        <label for="contact" class="order-div-1" required>Order ID</label>
+                    </div>
+                    <div class="order-div-blank">
+                        <input type="number" class="order-div-blank">
+                    </div>
+
+                </div>
+
+                <div class="Delivery-div">
+                    <div class="Delivery-div-content">
+                        <label for="contact" class="Delivery-div-1" required>Delivery Destination</label>
+                    </div>
+                    <div class="Delivery-div-blank">
+                        <input type="text" name="street-address" id="street-address">
+                        <label for="street-address">Street Address</label>
+                        <input type="text" name="address-line2" id="address-line2">
+                        <label for="address-line2">Address Line 2</label>
+                        <!-- <div class="location"> -->
+                        <div class="location-div-blank">
+                            <div class="location-city">
+                                <input type="text" name="city-address" id="city-address">
+                                <label for="city-address">City</label>
+                            </div>
+                            <div class="location-region">
+                                <input type="text" name="region-address" id="region-address">
+                                <label for="region-address">State/Region/Province</label>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+
+                        <div class="country-code">
+                            <div class="zip-country">
+                                <input type="number" name="zip-code" id="zip-code">
+                                <label for="zip-code">Postal/Zip Code</label>
+                            </div>
+
+                            <div class="name-country">
+                                <input list="country" name="country" class="us-ip">
+                                <datalist id="country">
+                                    <option value="India">
+                                    <option value="America">
+                                    <option value="Canada">
+                                    <option value="Australia">
+                                    <option value="Japan">
+                                    </option>
+                                </datalist>
+                                <label for="country">Country</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place-div">
+                    <div class="place-div-content">
+                        <label for="place" class="place-div-1" required>When did you place your order?</label>
+                    </div>
+                    <div class="place-div-blank">
+                        <input type="number" class="place-div-blank">
+                        <p>dd-MM-yyyy</p>
+                    </div>
+
+                </div>
+
+                <button class="form2-submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
